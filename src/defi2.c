@@ -76,18 +76,18 @@ bool mastermind() {
         comparer_codes(code, essai, &bien, &mal);
 
         // Afficher le résultat immédiatement
-        printf("Bien placés : %d | Mal placés : %d\n", bien, mal);
+        printf("Bien places : %d | Mal places : %d\n", bien, mal);
 
         // Vérifier si le joueur a gagné
         if(bien == CODE_LEN) {
-            printf("\nBravo ! Tu as trouvé le code en %d tentatives.\n", tentatives);
+            printf("\nBravo ! Tu as trouve le code en %d tentatives.\n", tentatives);
             return true;
         }
     }
 
     // Si le joueur n'a pas trouvé après MAX_TENTATIVES
-    printf("\nDésolé ! Tu as dépassé %d tentatives.\n", MAX_TENTATIVES);
-    printf("Le code secret était : ");
+    printf("\nDésolé ! Tu as depasse %d tentatives.\n", MAX_TENTATIVES);
+    printf("Le code secret etait : ");
     for(int i = 0; i < CODE_LEN; i++) printf("%d ", code[i]);
     printf("\n");
     return false;
@@ -98,4 +98,5 @@ bool defi2() {
     printf("TEST");
     srand(time(NULL));
     return mastermind();
+
 }

@@ -42,16 +42,18 @@ gcc -o my_program main.c ui.c defi3.c addsubmission.c date_submission.c \
 ecriredansclassement.c ajouterligne.c affichestanding.c affichestats.c \
 defi4.c defi1.c defi2.c statspersonnel.c affichehistorique.c
 
-Fichier    Description
+## ⚙️ Structure des Fichiers
 
-main.c   ||Point d'entrée du programme.
-ui.c     ||Gère l'interface utilisateur, la navigation dans les menus et les appels aux fonctions de défi."
-defiX.c  ||Implémentations des Défis Algorithmiques (1, 2, 3, 4)."
-addsubmission.c   ||Enregistre les statistiques de soumission pour chaque défi (temps, nombre d'essais)."
-statspersonnel.c  ||Gère l'ajout d'une soumission à l'historique du joueur.
-affichehistorique.c|   |Affiche l'historique de toutes les soumissions effectuées.
-affichestats.c    ||Affiche les statistiques globales de tous les défis.
-ajouterligne.c    ||Ajoute le score d'un joueur au classement (mémoire, avant le tri)."
-ecriredansclassement.c   ||Contient la fonction mise_a_jour qui lit, trie (qsort), et réécrit le classement (standing2.txt)."
-date_submission.c  ||Fournit la fonction timing() pour horodater les soumissions.
-standing2.txt      ||Fichier de données contenant le classement des joueurs.
+| Fichier | Description |
+| :--- | :--- |
+| `main.c` | Point d'entrée du programme. |
+| `ui.c` | Gère l'interface utilisateur, la navigation dans les menus et les appels aux fonctions de défi. |
+| `defiX.c` | Implémentations des Défis Algorithmiques (1, 2, 3, 4). |
+| `addsubmission.c` | Enregistre les statistiques de soumission pour chaque défi (temps, nombre d'essais). |
+| `statspersonnel.c` | Gère l'ajout d'une soumission à l'historique du joueur. |
+| `affichehistorique.c` | Affiche l'historique de toutes les soumissions effectuées. |
+| `affichestats.c` | Affiche les statistiques globales de tous les défis. |
+| `ajouterligne.c` | Ajoute le score d'un joueur au classement (mémoire, avant le tri). |
+| `ecriredansclassement.c` | Contient la fonction `mise_a_jour` qui lit, trie (`qsort`), et réécrit le classement (`standing2.txt`). |
+| `date_submission.c` | Fournit la fonction `timing()` pour horodater les soumissions. |
+| `standing2.txt` | Fichier de données contenant le classement des joueurs. |

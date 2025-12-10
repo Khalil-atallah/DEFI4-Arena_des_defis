@@ -33,23 +33,19 @@ Le système propose actuellement les défis suivants, chacun ayant un score pote
 
 Ce projet est écrit en langage C. Pour compiler et exécuter le programme, vous devez disposer d'un compilateur C (tel que GCC ou Clang) installé sur votre système.
 
-1. Cloner le dépôt
-Utilisez la commande git pour télécharger le projet :
+1. Cloner le dépôt                                                                                                                                                                                       Utilisez la commande git pour télécharger le projet :
 Bash :
 ``git clone https://github.com/Khalil-atallah/DEFI4-Arena_des_defis
 cd DEFI4-Arena_des_defi``
 
-2. Compilation (Liaison Complète)
-La compilation doit inclure tous les fichiers source (.c) de votre projet. Cela est essentiel pour lier correctement toutes les fonctions (comme ajouter_submission), évitant ainsi l'erreur undefined reference.
+2. Compilation                                                                                                                                                                                               La compilation doit inclure tous les fichiers source (.c) de votre projet. Cela est essentiel pour lier correctement toutes les fonctions (comme ajouter_submission), évitant ainsi l'erreur undefined reference.
 
 Utilisez cette commande complète :
 Bash :
 ``gcc -o my_program main.c ui.c defi3.c addsubmission.c date_submission.c ecriredansclassement.c ajouterligne.c affichestanding.c affichestats.c defi4.c defi1.c defi2.c statspersonnel.c affichehistorique.c``
 
-3. Exécution du Programme
-Une fois la compilation terminée, vous pouvez lancer l'application avec la commande suivante :
-Bash :
-``./my_program``
+3. Exécution du Programme                                                                                                                                                                                  Une fois la compilation terminée, vous pouvez lancer l'application avec la commande suivante :                                                                                                                Bash :
+``./my_program``                                                                                                                                                                                               
 ## ⚙️ Structure des Fichiers
 
 | Fichier | Description |
